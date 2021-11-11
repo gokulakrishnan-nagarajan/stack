@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stack in JS</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body class="flex">
+        <div class="left-container flex-column">
+            <div class="flex-center">
+              <span>Stack Size : </span>
+              <input id="stack-size" type="number" min="1" value="1" onchange="stackSizeChanged()" />
+            </div>
+            <div class="flex-center">
+              <input id="input" type="number" value="6" />
+              <button onclick="pushClicked()">Push</button>
+            </div>
+            <button onclick="popClicked()">Pop</button>
+            <span id="err-msg" class="err-msg"></span>
+          </div>
+          <div class="right-container">
+            <div id="stack" class="stack-container flex-column-reverse justify-content-end">
+              <!-- <div class="stack-item">1</div> -->
+            </div>
+          </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <script src="index.js"></script>
+</html>
